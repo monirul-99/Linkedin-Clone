@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linkedin -</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-left">
+        <a class="logo" href="index.html"
+          ><img src="images/logo.png" alt=""
+        /></a>
+        <div class="search-box">
+          <img src="images/search.png" alt="" />
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+
+      <div class="navbar-center">
+        <ul>
+          <li>
+            <a href="#" class="active-link"
+              ><img src="images/home.png" alt="" /><span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/network.png" alt="" /><span>My Network</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/jobs.png" alt="" /><span>Jobs</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/message.png" alt="" /><span>Messaging</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><img src="images/notification.png" alt="" /><span
+                >Notification</span
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="navbar-right">
+        <div class="online">
+          <img
+            class="nav-profile-img"
+            src="images/user-1.png"
+            alt=""
+            onclick="toggleMenu()"
+          />
+        </div>
+      </div>
+      <!-- profile drop down menu -->
+      <div class="profile-menu-wrap" id="profileMenu">
+        <div class="profile-menu">
+          <div class="user-info">
+            <img src="images/user-1.png" alt="" />
+            <div>
+              <h3>Rayan Walton</h3>
+              <a href="#">see your profile</a>
+            </div>
+          </div>
+          <hr />
+          <a class="profile-menu-link" href="#">
+            <img src="images/feedback.png" alt="" />
+            <p>Give Feedback</p>
+            <span>></span>
+          </a>
+          <a class="profile-menu-link" href="#">
+            <img src="images/setting.png" alt="" />
+            <p>Setting & Privacy</p>
+            <span>></span>
+          </a>
+          <a class="profile-menu-link" href="#">
+            <img src="images/help.png" alt="" />
+            <p>Help & Support</p>
+            <span>></span>
+          </a>
+          <a class="profile-menu-link" href="#">
+            <img src="images/display.png" alt="" />
+            <p>Display & Accessiblity</p>
+            <span>></span>
+          </a>
+          <a class="profile-menu-link" href="#">
+            <img src="images/logout.png" alt="" />
+            <p>Logout</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar close code -->
+
+    <script>
+      let profileMenu = document.getElementById("profileMenu");
+      function toggleMenu() {
+        profileMenu.classList.toggle("open-menu");
+      }
+    </script>
+  </body>
+</html>
